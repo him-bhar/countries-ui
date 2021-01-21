@@ -1,0 +1,16 @@
+<div class="container">
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <th>Country Name</th>
+      <th>Country Code</th>
+    </tr>
+    <tr *ngFor="let country of countries">
+      <td>
+        {{country.name}}
+      </td>
+      <td>
+        {{country.code}}
+      </td>
+    </tr>
+  </table>
+</div>
