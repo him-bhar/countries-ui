@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { CountryService } from "../../services/country.service";
-import { FormControl, FormGroup, Validators } from "@angular/forms";
-import {Observable} from "rxjs";  //For implementing forms
-
+import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {CountryService} from "../../services/country.service";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-add-country',
+  templateUrl: './add-country.component.html',
+  styleUrls: ['./add-country.component.css']
 })
-export class HomeComponent implements OnInit {
+export class AddCountryComponent implements OnInit {
 
   countryType: string[] = [
     'Developed',

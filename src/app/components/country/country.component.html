@@ -6,7 +6,7 @@
     </tr>
     <tr *ngFor="let country of countries">
       <td>
-        {{country.name}}
+        <a [routerLink]="['/country/', country.alpha2Code]">{{country.name}}</a>
       </td>
       <td>
         {{country.alpha2Code}}

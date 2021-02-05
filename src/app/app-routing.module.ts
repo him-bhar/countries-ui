@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CountryComponent } from "./components/country/country.component";
-import { HomeComponent } from "./components/home/home.component";
 import { ViewCountryComponent } from "./components/view-country/view-country.component";
+import {AddCountryComponent} from "./components/add-country/add-country.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: CountryComponent
   },
   {
     path: 'country/:country-code',
@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'country',
-    component: CountryComponent
+    component: AddCountryComponent
   }
 
 ]; //Routes for the application are defined here.

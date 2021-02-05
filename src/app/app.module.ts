@@ -6,17 +6,17 @@ import { AppComponent } from './app.component';
 import { CountryService } from "./services/country.service";
 import { HttpClientModule } from "@angular/common/http";
 import { CountryComponent } from './components/country/country.component';
-import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from "@angular/forms";
 import { ViewCountryComponent } from './components/view-country/view-country.component';
+import { AddCountryComponent } from './components/add-country/add-country.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CountryComponent,
-    HomeComponent,
-    ViewCountryComponent
+    ViewCountryComponent,
+    AddCountryComponent
   ],
   imports: [
     BrowserModule,
